@@ -4,8 +4,11 @@ const topContainer = document.querySelector('.top-section');
 const topTextSlogan = document.querySelector('.top-text-slogan');
 const topTextSubtext = document.querySelector('.top-text-subtext');
 const topTextButton = document.querySelector('.top-text-btn');
+const navIcon = document.querySelector('.fa-bars');
+const phoneNav = document.querySelector('.phone-nav');
 
 let showDropdown = false;
+let showNav = false;
 
 const topEntries = [
     {
@@ -28,7 +31,7 @@ const topEntries = [
     },
     {
         slogan: 'Need something other than Romcoms?',
-        subtext: 'Witness the best cinema has to offer',
+        subtext: 'Witness the best Cinema has to offer',
         buttonText: 'Our Top 5 Movies',
         id: 'movie'
     },
@@ -40,7 +43,18 @@ const topEntries = [
     },
 ]
 
-let entryIndex = 1;
+let entryIndex = 0;
+
+const toggleMobileNav = () => {
+    showNav = !showNav
+    if (showNav) {
+        navIcon.className = 'fas fa-bars';
+        phoneNav.id = 'hide-phone-nav'
+    } else {
+        navIcon.className = 'fas fa-times';
+        phoneNav.id = 'show-phone-nav';
+    }  
+}
 
 const toggle = () => {
     showDropdown = !showDropdown;
@@ -52,6 +66,19 @@ const nextTop = () => {
         entryIndex = 0;
     } else {
         entryIndex += 1;
+    }
+    const topText = topEntries[entryIndex];
+    topContainer.id = topText.id;
+    topTextSlogan.innerHTML = topText.slogan;
+    topTextSubtext.innerHTML = topText.subtext;
+    topTextButton.innerHTML = topText.buttonText;
+}
+
+const prevTop = () => {
+    if (entryIndex == 0) {
+        entryIndex = topEntries.length-1;
+    } else {
+        entryIndex -= 1;
     }
     const topText = topEntries[entryIndex];
     topContainer.id = topText.id;
