@@ -4,6 +4,7 @@ const topContainer = document.querySelector('.top-section');
 const topTextSlogan = document.querySelector('.top-text-slogan');
 const topTextSubtext = document.querySelector('.top-text-subtext');
 const topTextButton = document.querySelector('.top-text-btn');
+const topTextButtonLink = document.querySelector('.top-text-btn-link');
 const navIcon = document.querySelector('.fa-bars');
 const phoneNav = document.querySelector('.phone-nav');
 
@@ -48,11 +49,11 @@ let entryIndex = 0;
 const toggleMobileNav = () => {
     showNav = !showNav
     if (showNav) {
-        navIcon.className = 'fas fa-bars';
-        phoneNav.id = 'hide-phone-nav'
-    } else {
         navIcon.className = 'fas fa-times';
-        phoneNav.id = 'show-phone-nav';
+        phoneNav.id = 'show-phone-nav'
+    } else {
+        navIcon.className = 'fas fa-bars';
+        phoneNav.id = 'hide-phone-nav';
     }  
 }
 
@@ -71,7 +72,8 @@ const nextTop = () => {
     topContainer.id = topText.id;
     topTextSlogan.innerHTML = topText.slogan;
     topTextSubtext.innerHTML = topText.subtext;
-    topTextButton.innerHTML = topText.buttonText;
+    topTextButtonLink.innerHTML = topText.buttonText;
+    topTextButtonLink.setAttribute('href',`/top5/${topText.id}.html`)
 }
 
 const prevTop = () => {

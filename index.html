@@ -14,10 +14,10 @@
 <body>
     <div class="container">
         <i onclick="toggleMobileNav()" class="fas fa-bars"></i>
-        <ul class="phone-nav">
-            <li><a href="#" class="phone-nav-item">Home</a></li>
-            <li><a href="#" class="phone-nav-item">About</a></li>
-            <li><a href="#" class="phone-nav-item">Top 5s</a></li>
+        <ul class="phone-nav" id="hide-phone-nav">
+            <li class="phone-nav-item" id="phone-nav-home"><a href="#" >Home</a></li>
+            <li class="phone-nav-item" id="phone-nav-about"><a href="#" >About</a></li>
+            <li class="phone-nav-item" id="phone-nav-top"><a href="#" >Top 5s</a></li>
         </ul>
         <article class="section-container" id="home">
         <!-- Navbar -->
@@ -34,7 +34,7 @@
                         Top 5s
                         <i onclick="toggle()" class="fas fa-caret-down"></i>
                         <ul class="top-dropdown">
-                            <a href="#" class="dropdown-item">Food</a>
+                            <a href="/top5/food.html" class="dropdown-item">Food</a>
                             <a href="#" class="dropdown-item">Drink</a>
                             <a href="#" class="dropdown-item">TV Shows</a>
                             <a href="#" class="dropdown-item">Movies</a>
@@ -65,7 +65,7 @@
                     <div class="top-text-items">
                         <h2 class="top-text-slogan">Feeling Hungry?</h2>
                         <h3 class="top-text-subtext">Excite your tastebuds with our Top 5 Foods</h3>
-                        <button class="top-text-btn">Our Top 5 Foods</button>
+                        <button class="top-text-btn"><a href="/top5/food.html" class="top-text-btn-link">Our Top 5 Foods</a></button>
                     </div>
                 </section>
                 <i onclick="prevTop()" class="fas fa-chevron-left chevron"></i>
@@ -93,52 +93,53 @@
         </article>
         <article class="footer">
             <div class="footer-container">
-            <section class="sitemap">
-                <ul class="sitemap-items">
-                    <li>
-                        <a class="sitemap-title">Sitemap</a>
-                    </li>
-                    <li>
-                        <a class="sitemap-item-name">Home</a>
-                    </li>
-                    <li>
-                        <a class="sitemap-item-name">About</a>
-                    </li>
-                    <li>
-                        <a class="sitemap-item-name">Top 5s</a>
-                        <ul class="sitemap-top5s">
-                            <li>
-                                <a class="sitemap-top-name">Foods</a>
-                            </li>
-                            <li>
-                                <a class="sitemap-top-name">Drinks</a>
-                            </li>
-                            <li>
-                                <a class="sitemap-top-name">TV Shows</a>
-                            </li>
-                            <li>
-                                <a class="sitemap-top-name">Movies</a>
-                            </li>
-                            <li>
-                                <a class="sitemap-top-name">Anime/Manga</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-            <section class="contact">
-                <i class="fab fa-octopus-deploy"></i>
-                <div class="contact-detail">
-                    <i class="fas fa-phone"></i>
-                    <span class="contact-data">+44 0000 000 000</span>
-                </div>
-                <div class="contact-detail">
-                    <i class="fas fa-envelope"></i>
-                    <span class="contact-data">email@address.com</span>
-                </div>
-            </section>
-            <span class="copyright">Copyright&#169; 2021</span>
+                <i class="fab fa-octopus-deploy" id="logo-lg"></i>
+                <section class="sitemap">
+                    <ul class="sitemap-items">
+                        <li>
+                            <a class="sitemap-title">Sitemap</a>
+                        </li>
+                        <li class="sitemap-item-name">
+                            <a >Home</a>
+                        </li>
+                        <li class="sitemap-item-name">
+                            <a >About</a>
+                        </li>
+                        <li class="sitemap-item-name">
+                            <a>Top 5s</a>
+                            <ul class="sitemap-top5s">
+                                <li class="sitemap-top-name">
+                                    <a href="/top5/food.html">Foods</a>
+                                </li>
+                                <li class="sitemap-top-name">
+                                    <a href="/top5/drink.html">Drinks</a>
+                                </li>
+                                <li class="sitemap-top-name">
+                                    <a href="/top5/tv.html">TV Shows</a>
+                                </li>
+                                <li class="sitemap-top-name">
+                                    <a href="/top5/movie.html">Movies</a>
+                                </li>
+                                <li class="sitemap-top-name">
+                                    <a href="/top5/animemanga.html">Anime/Manga</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section class="contact">
+                    <i class="fab fa-octopus-deploy" id="phone-logo"></i>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone"></i>
+                        <span class="contact-data">+44 0000 000 000</span>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <span class="contact-data">email@address.com</span>
+                    </div>
+                </section>
             </div>
+            <span class="copyright">Copyright&#169; 2021</span>
         </article>
     </div>
     <script src="script.js"></script>
