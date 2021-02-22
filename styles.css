@@ -47,6 +47,7 @@ button:hover {
   max-width: 1440px;
   max-height: 1024px;
   margin-top: 0;
+  background-color: #9dd4d7;
 }
 
 #home {
@@ -431,6 +432,41 @@ button:hover {
 .contact-detail {
   font-size: 1.5rem;
 }
+
+/* Start Top Page */
+#top-food-landing {
+  padding-top: 50px;
+}
+
+.top-list {
+  background-color: #cae8eb;
+}
+
+.top-entry {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 20px;
+}
+.top-image {
+  grid-column: 2 / span 3;
+}
+
+.top-number {
+  grid-column: 7;
+}
+
+.top-entry-description {
+  grid-column: 8 / span 3;
+}
+
+.top-entry-name {
+  font-size: 2rem;
+}
+
+.top-entry-text {
+  font-size: 1.5rem;
+}
+/* End Top Page */
 
 @media screen and (max-height: 899px) {
   .text-container {
