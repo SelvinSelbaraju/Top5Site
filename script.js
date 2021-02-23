@@ -104,3 +104,7 @@ const prevTop = () => {
     topTextSubtext.innerHTML = topText.subtext;
     topTextButton.innerHTML = topText.buttonText;
 }
+
+window.onload = (e) => {
+    document.querySelector('.container-hide').className = 'container';
+}

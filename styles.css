@@ -29,6 +29,12 @@ button:hover {
   background-color: #f0db66be;
 }
 
+.container-hide {
+  position: relative;
+  opacity: 0;
+  right: -100%;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -39,6 +45,10 @@ button:hover {
     rgba(165, 186, 189, 0.5),
     rgba(157, 212, 215, 0.5)
   );
+  position: relative;
+  opacity: 100;
+  right: 0;
+  transition: right ease-out 1s, opacity ease-out 1s;
 }
 
 .section-container {
