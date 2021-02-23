@@ -13,64 +13,182 @@
 </head>
 <body>
     <div class="container">
-    <article class="section-container" id="top-food-landing">
-        <nav class="navbar">
-            <i class="fab fa-octopus-deploy"></i>
-            <ul class="navbar-items">
-                <a href="/index.html" class="nav-item one">
-                    Home
-                </a>
-                <a href="#" class="nav-item two">
-                    About Us
-                </a>
-                <div href="#" class="nav-item three">
-                    Top 5s
-                    <i onclick="toggle()" class="fas fa-caret-down"></i>
-                    <ul class="top-dropdown">
-                        <a href="/top5/food.html" class="dropdown-item">Food</a>
-                        <a href="#" class="dropdown-item">Drink</a>
-                        <a href="#" class="dropdown-item">TV Shows</a>
-                        <a href="#" class="dropdown-item">Movies</a>
-                        <a href="#" class="dropdown-item">Anime/Manga</a>
-                    </ul>
-                </div>
+        <i onclick="toggleMobileNav()" class="fas fa-bars"></i>
+        <ul class="phone-nav" id="hide-phone-nav">
+            <li class="phone-nav-item" id="phone-nav-home"><a href="/index.html">Home</a></li>
+            <li class="phone-nav-item" id="phone-nav-about"><a href="#">About</a></li>
+            <li class="phone-nav-item" id="phone-nav-top"><a href="#">Top 5s</a></li>
+            <ul class="phone-nav-top">
+                <li class="phone-nav-top-item" id="phone-nav-top-food"><a href="/top5/food.html">Foods</a></li>
+                <li class="phone-nav-top-item" id="phone-nav-top-drink"><a href="/top5/drink.html">Drinks</a></li>
+                <li class="phone-nav-top-item" id="phone-nav-top-tv"><a href="/top5/tv.html">Tv Shows</a></li>
+                <li class="phone-nav-top-item" id="phone-nav-top-movie"><a href="/top5/movie.html">Movies</a></li>
+                <li class="phone-nav-top-item" id="phone-nav-top-animemanga"><a href="/top5/animemanga.html">Anime/Manga</a>
+                </li>
             </ul>
-        </nav>
-        <div class="about-container">
-            <section class="about-text">
-                <h1 class="about-title">Food Glorious Food</h1>
-                <p class="about-para">
-                    Ever since I was young, I would always spend time with my mum in the kitchen. At first, this was usually because I was
-                    hungry! But soon, I wanted to learn how to cook as good as she could.
-                </p>
-                <p class="about-para">
-                    Nowadays, I do a lot of cooking and like trying loads of different recipes. I mainly love Asian cuisine but also love
-                    Western comfort foods. With my Top 5 Foods, I wanted to give you something delicious yet simple to make yourself!
-                </p>
-            </section>
-            <img class="about-img" src="/images/about.jpg" alt="me">
-        </div>
-    </article>
-    <article class="section-container top-list" id="top-food">
-        <section class="top-grid">
-            <div class="top-entry">
-                <img class="top-image" src="./top-images/food/katsu.jpg" alt="katsu">
-                <span class="top-number">5</span>
-                <aside class="top-entry-description">
-                    <h4 class="top-entry-name">Katsu</h4>
-                    <p class="top-entry-text">
-                        Anyone who has ever had Japanese food, has probably had some sort of Katsu. For those who don’t know, Katsu is deep
-                        fried using Panko Breadcrumbs. These breadcrumbs are so crispy and so light. The original Katsu is Pork, but Chicken,
-                        Tofu and Prawn are also delicious!
+        </ul>
+        <article class="section-container" id="top">
+            <nav class="navbar">
+                <i class="fab fa-octopus-deploy"></i>
+                <ul class="navbar-items">
+                    <a href="/index.html" class="nav-item" id="nav-item-home">
+                        Home
+                    </a>
+                    <a href="#" class="nav-item" id="nav-item-about">
+                        About Us
+                    </a>
+                    <div href="#" class="nav-item" id="nav-item-top">
+                        Top 5s
+                        <i onclick="toggle()" class="fas fa-caret-down"></i>
+                        <ul class="top-dropdown">
+                            <a href="/top5/food.html" class="dropdown-item" id="nav-top-food">Food</a>
+                            <a href="/top5/drink.html" class="dropdown-item" id="nav-top-drink">Drink</a>
+                            <a href="/top5/tv.html" class="dropdown-item" id="nav-top-tv">TV Shows</a>
+                            <a href="/top5/movie.html" class="dropdown-item" id="nav-top-movie">Movies</a>
+                            <a href="/top5/animemanga.html" class="dropdown-item" id="nav-top-animemanga">Anime/Manga</a>
+                        </ul>
+                    </div>
+                </ul>
+            </nav>
+            <div class="about-container">
+                <section class="about-text">
+                    <h1 class="about-title">Food Glorious Food</h1>
+                    <p class="about-para">
+                        Ever since I was young, I would always spend time with my mum in the kitchen. At first, this was usually because I was
+                        hungry! But soon, I wanted to learn how to cook as good as she could.
                     </p>
-                </aside>
+                    <p class="about-para">
+                        Nowadays, I do a lot of cooking and like trying loads of different recipes. I mainly love Asian cuisine but also love
+                        Western comfort foods. With my Top 5 Foods, I wanted to give you something delicious yet simple to make yourself!
+                    </p>
+                </section>
+                <img class="about-img" src="/images/about.jpg" alt="me">
             </div>
-            <div class="top-entry"></div>
-            <div class="top-entry"></div>
-            <div class="top-entry"></div>
-            <div class="top-entry"></div>
-        </section>
-    </article>
+        </article>
+        <article class="section-container top-list" id="top-food">
+            <h2 class="top-5-heading">The Top 5</h2>
+            <h3 class="top-5-sub">Drumroll please...</h3>
+            <section class="top-grid">
+                <div class="top-entry">
+                    <img class="top-image" src="./top-images/food/katsu.jpg" alt="katsu">
+                    <span class="top-number">5</span>
+                    <aside class="top-entry-description">
+                        <h4 class="top-entry-name">Katsu</h4>
+                        <p class="top-entry-text">
+                            Anyone who has ever had Japanese food, has probably had some sort of Katsu. For those who don’t know, Katsu is deep
+                            fried using Panko Breadcrumbs. These breadcrumbs are so crispy and so light. The original Katsu is Pork, but Chicken,
+                            Tofu and Prawn are also delicious!
+                        </p>
+                    </aside>
+                </div>
+                <div class="top-entry">
+                    <img class="top-image" src="./top-images/food/katsu.jpg" alt="katsu">
+                    <span class="top-number">4</span>
+                    <aside class="top-entry-description">
+                        <h4 class="top-entry-name">Katsu</h4>
+                        <p class="top-entry-text">
+                            Anyone who has ever had Japanese food, has probably had some sort of Katsu. For those who don’t know, Katsu
+                            is deep
+                            fried using Panko Breadcrumbs. These breadcrumbs are so crispy and so light. The original Katsu is Pork, but
+                            Chicken,
+                            Tofu and Prawn are also delicious!
+                        </p>
+                    </aside>
+                </div>
+                <div class="top-entry">
+                    <img class="top-image" src="./top-images/food/katsu.jpg" alt="katsu">
+                    <span class="top-number">3</span>
+                    <aside class="top-entry-description">
+                        <h4 class="top-entry-name">Katsu</h4>
+                        <p class="top-entry-text">
+                            Anyone who has ever had Japanese food, has probably had some sort of Katsu. For those who don’t know, Katsu
+                            is deep
+                            fried using Panko Breadcrumbs. These breadcrumbs are so crispy and so light. The original Katsu is Pork, but
+                            Chicken,
+                            Tofu and Prawn are also delicious!
+                        </p>
+                    </aside>
+                </div>
+                <div class="top-entry">
+                    <img class="top-image" src="./top-images/food/katsu.jpg" alt="katsu">
+                    <span class="top-number">2</span>
+                    <aside class="top-entry-description">
+                        <h4 class="top-entry-name">Katsu</h4>
+                        <p class="top-entry-text">
+                            Anyone who has ever had Japanese food, has probably had some sort of Katsu. For those who don’t know, Katsu
+                            is deep
+                            fried using Panko Breadcrumbs. These breadcrumbs are so crispy and so light. The original Katsu is Pork, but
+                            Chicken,
+                            Tofu and Prawn are also delicious!
+                        </p>
+                    </aside>
+                </div>
+                <div class="top-entry">
+                    <img class="top-image" src="./top-images/food/katsu.jpg" alt="katsu">
+                    <span class="top-number">1</span>
+                    <aside class="top-entry-description">
+                        <h4 class="top-entry-name">Katsu</h4>
+                        <p class="top-entry-text">
+                            Anyone who has ever had Japanese food, has probably had some sort of Katsu. For those who don’t know, Katsu
+                            is deep
+                            fried using Panko Breadcrumbs. These breadcrumbs are so crispy and so light. The original Katsu is Pork, but
+                            Chicken,
+                            Tofu and Prawn are also delicious!
+                        </p>
+                    </aside>
+                </div>
+            </section>
+        </article>
+        <article class="footer">
+            <div class="footer-container">
+                <i class="fab fa-octopus-deploy" id="logo-lg"></i>
+                <section class="sitemap">
+                    <ul class="sitemap-items">
+                        <li>
+                            <a class="sitemap-title">Sitemap</a>
+                        </li>
+                        <li class="sitemap-item-name">
+                            <a>Home</a>
+                        </li>
+                        <li class="sitemap-item-name">
+                            <a>About</a>
+                        </li>
+                        <li class="sitemap-item-name">
+                            <a>Top 5s</a>
+                            <ul class="sitemap-top5s">
+                                <li class="sitemap-top-name">
+                                    <a href="/top5/food.html">Foods</a>
+                                </li>
+                                <li class="sitemap-top-name">
+                                    <a href="/top5/drink.html">Drinks</a>
+                                </li>
+                                <li class="sitemap-top-name">
+                                    <a href="/top5/tv.html">TV Shows</a>
+                                </li>
+                                <li class="sitemap-top-name">
+                                    <a href="/top5/movie.html">Movies</a>
+                                </li>
+                                <li class="sitemap-top-name">
+                                    <a href="/top5/animemanga.html">Anime/Manga</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section class="contact">
+                    <i class="fab fa-octopus-deploy" id="phone-logo"></i>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone"></i>
+                        <span class="contact-data">+44 0000 000 000</span>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <span class="contact-data">email@address.com</span>
+                    </div>
+                </section>
+            </div>
+            <span class="copyright">Copyright&#169; 2021</span>
+        </article>
     </div>
     <script src="../script.js"></script>
 </body>

@@ -1,3 +1,5 @@
+const currentPage = document.querySelector('.section-container');
+const currentTop = document.querySelector('.top-list');
 const topMenuItem = document.querySelector('.three');
 const topDropdown = document.querySelector('.top-dropdown');
 const topContainer = document.querySelector('.top-section');
@@ -10,6 +12,20 @@ const phoneNav = document.querySelector('.phone-nav');
 
 let showDropdown = false;
 let showNav = false;
+
+const activePhoneSection = document.querySelector(`#phone-nav-${currentPage.id}`);
+const activeSection = document.querySelector(`#nav-item-${currentPage.id}`);
+
+if (currentTop) {
+const activeTop = document.querySelector(`#nav-${currentTop.id}`);
+const activePhoneTop = document.querySelector(`#phone-nav-${currentTop.id}`);
+activeTop.className = 'dropdown-item top-active';
+activePhoneTop.className = 'phone-nav-top-item top-active';
+}
+
+activePhoneSection.className = 'phone-nav-item active';
+activeSection.className = 'nav-item active';
+
 
 const topEntries = [
     {
