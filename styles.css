@@ -306,7 +306,7 @@ button:hover {
 }
 
 #food {
-  background-image: url('/images/food.jpg');
+  background-image: url('images/food.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: block;
@@ -314,7 +314,7 @@ button:hover {
 }
 
 #drink {
-  background-image: url('/images/drink.jpg');
+  background-image: url('images/drink.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: block;
@@ -322,7 +322,7 @@ button:hover {
 }
 
 #tv {
-  background-image: url('/images/tv.jpg');
+  background-image: url('images/tv.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: block;
@@ -330,7 +330,7 @@ button:hover {
 }
 
 #movie {
-  background-image: url('/images/movie.png');
+  background-image: url('images/movie.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: block;
@@ -338,7 +338,7 @@ button:hover {
 }
 
 #animemanga {
-  background-image: url('/images/animemanga.jpg');
+  background-image: url('images/animemanga.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: block;
