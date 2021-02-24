@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,23 +12,25 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
         integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 </head>
+
 <body>
     <div class="container-hide">
         <i onclick="toggleMobileNav()" class="fas fa-bars"></i>
         <ul class="phone-nav" id="hide-phone-nav">
-            <li class="phone-nav-item" id="phone-nav-home"><a href="index.html" >Home</a></li>
-            <li class="phone-nav-item" id="phone-nav-about"><a href="about.html" >About</a></li>
-            <li class="phone-nav-item" id="phone-nav-top"><a href="top.html" >Top 5s</a></li>
+            <li class="phone-nav-item" id="phone-nav-home"><a href="index.html">Home</a></li>
+            <li class="phone-nav-item" id="phone-nav-about"><a href="about.html">About</a></li>
+            <li class="phone-nav-item" id="phone-nav-top"><a href="top">Top 5s</a></li>
             <ul class="phone-nav-top">
                 <li class="phone-nav-top-item" id="phone-nav-top-food"><a href="top5/food.html">Foods</a></li>
                 <li class="phone-nav-top-item" id="phone-nav-top-drink"><a href="top5/drink.html">Drinks</a></li>
                 <li class="phone-nav-top-item" id="phone-nav-top-tv"><a href="top5/tv.html">Tv Shows</a></li>
                 <li class="phone-nav-top-item" id="phone-nav-top-movie"><a href="top5/movie.html">Movies</a></li>
-                <li class="phone-nav-top-item" id="phone-nav-top-animemanga"><a href="top5/animemanga.html">Anime/Manga</a></li>
+                <li class="phone-nav-top-item" id="phone-nav-top-animemanga"><a
+                        href="top5/animemanga.html">Anime/Manga</a></li>
             </ul>
         </ul>
-        <article class="section-container" id="home">
-        <!-- Navbar -->
+        <article class="section-container" id="top">
+            <!-- Navbar -->
             <nav class="navbar">
                 <i class="fab fa-octopus-deploy"></i>
                 <ul class="navbar-items">
@@ -36,7 +39,7 @@
                     </a>
                     <a href="about.html" class="nav-item" id="nav-item-about">
                         About Us
-                    </a >
+                    </a>
                     <div class="nav-item" id="nav-item-top">
                         <a href="top.html">Top 5s</a>
                         <i onclick="toggle()" class="fas fa-caret-down"></i>
@@ -50,55 +53,46 @@
                     </div>
                 </ul>
             </nav>
-        <!-- End Navbar -->
-        <!-- Text -->
-        <section class="text-container">
-            <div class="titles">
-                <h1 class="main-title">Choose. Joy.</h1>
-                <h2 class="sub-title">Expand your horizons and smile</h2>
-            </div>
-            <p class="text-item text-para">Nowadays, everyone is stuck in a routine doing the same things each and every day.</p>
-            <p class="  text-item text-para">It’s time to break out of that and try something new! Check out our amazing Top 5s!</p>
-            <button class=" text-item top-btn" type="button"><a href="top.html">Check out our Top 5s</a></button>
-        </section>
-        <!-- End Text -->
-        </article>
-        <article class="section-container">
-            <div class="top-heading">
-                <h1>We've. Got. You.</h1>
-            </div>
-            <div class="carousel">
-                <section class="top-section" id="food">
-                    <div class="top-text-items">
-                        <h2 class="top-text-slogan">Feeling Hungry?</h2>
-                        <h3 class="top-text-subtext">Excite your tastebuds with our Top 5 Foods</h3>
-                        <button class="top-text-btn"><a href="top5/food.html" class="top-text-btn-link">Our Top 5 Foods</a></button>
+            <h1 class="top-categories-heading">Our Top 5s</h1>
+            <h2 class="top-categories-sub">Click a Top 5 Below!</h2>
+            <section class="top-categories">
+                <a href="top5/food.html" class="top-category-item-none">
+                    <img class="top-category-img" src="images/top-food.jpg" alt="food">
+                    <div class="top-category-text">
+                        <h3 class="top-category-name">Food</h3>
+                        <p class="top-category-slogan">Satisfy your hunger with these foods</p>
                     </div>
-                </section>
-                <i onclick="prevTop()" class="fas fa-chevron-left chevron"></i>
-                <i onclick="nextTop()" class="fas fa-chevron-right chevron"></i>
-            </div>
-        </article>
-        <article class="section-container" id="about-home">
-            <div class="about-container">
-                <section class="about-text">
-                    <h1 class="about-title">You can never be too bold</h1>
-                    <p class="about-para">
-                        When I was growing up, I would sometimes be embarassed by the things I like doing. I didn’t want to across as nerdy or
-                        weird.
-                    </p>
-                    <p class="about-para">
-                        However, once I started to care less about what other people thought, I became a lot happier. A lot of people also had
-                        similar interests to me and wanted to know more.
-                    </p>
-                    <button class="about-btn">
-                        <a href="about.html">
-                        Learn More About Me
-                        </a>
-                    </button>
-                </section>
-                <img class="about-img" src="images/about.jpg" alt="me">
-            </div>
+                </a>
+                <a href="top5/drink.html" class="top-category-item-none">
+                    <img class="top-category-img" src="images/top-drink.jpg" alt="drink">
+                    <div class="top-category-text">
+                        <h3 class="top-category-name">Drink</h3>
+                        <p class="top-category-slogan">Quench your thirst with these drinks</p>
+                    </div>
+                </a>
+                <a href="top5/tv.html" class="top-category-item-none">
+                    <img class="top-category-img" src="images/top-tv.jpg" alt="tv">
+                    <div class="top-category-text">
+                        <h3 class="top-category-name">TV Shows</h3>
+                        <p class="top-category-slogan">Find your new binge watch</p>
+                    </div>
+                </a>
+                <a href="top5/movie.html" class="top-category-item-none">
+                    <img class="top-category-img" src="images/top-movie.jpg" alt="movie">
+                    <div class="top-category-text">
+                        <h3 class="top-category-name">Movies</h3>
+                        <p class="top-category-slogan">Stay glued to your seat with these</p>
+                    </div>
+                </a>
+                <a href="top5/animemanga.html" class="top-category-item-none">
+                    <img class="top-category-img" src="images/top-animemanga.jpg" alt="animemanga">
+                    <div class="top-category-text">
+                        <h3 class="top-category-name">Anime/Manga</h3>
+                        <p class="top-category-slogan">Explore magical, unique worlds</p>
+                    </div>
+                </a>
+            </section>
+            <!-- End Navbar -->
         </article>
         <article class="footer">
             <div class="footer-container">
@@ -153,4 +147,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

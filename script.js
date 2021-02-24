@@ -10,6 +10,8 @@ const topTextButtonLink = document.querySelector('.top-text-btn-link');
 const navIcon = document.querySelector('.fa-bars');
 const phoneNav = document.querySelector('.phone-nav');
 
+const topCategories = document.querySelectorAll('.top-category-item-none');
+
 let showDropdown = false;
 let showNav = false;
 
@@ -107,4 +109,13 @@ const prevTop = () => {
 
 window.onload = (e) => {
     document.querySelector('.container-hide').className = 'container';
+    setTimeout(() => {
+        topCategories.forEach((category, index) => {
+            category.className = 'top-category-item-hide';
+        setTimeout(() => {
+            category.className = 'top-category-item';
+        },index * 300)
+    })
+    },1000)
+    
 }

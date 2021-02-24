@@ -82,13 +82,17 @@ button:hover {
   grid-gap: 20px;
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
+  background-color: rgb(163, 184, 184);
 }
 
 .fa-octopus-deploy {
   grid-column: 2 / span 1;
-  justify-self: center;
   padding-top: 1rem;
   font-size: 4rem;
+}
+
+.fa-octopus-deploy::before {
+  justify-self: center;
 }
 
 .fa-bars::before {
@@ -106,9 +110,9 @@ button:hover {
 }
 
 .navbar-items {
-  grid-column: 4 / span 8;
+  grid-column: 4 / span 9;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(9, 1fr);
   justify-items: center;
   align-items: center;
   grid-gap: 20px;
@@ -128,15 +132,15 @@ button:hover {
 }
 
 #nav-item-home {
-  grid-column: 1 / span 2;
+  grid-column: 1 / span 3;
 }
 
 #nav-item-about {
-  grid-column: 4 / span 2;
+  grid-column: 4 / span 3;
 }
 
 #nav-item-top {
-  grid-column: 7 / span 2;
+  grid-column: 7 / span 3;
   position: relative;
 }
 
@@ -568,6 +572,94 @@ button:hover {
   grid-row: 1;
 }
 /* End About Page */
+/* Start Top Categories */
+#top {
+  max-height: none;
+  height: auto;
+}
+
+.top-categories-heading {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.top-categories-sub {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+}
+
+.top-categories {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-column-gap: 20px;
+  grid-row-gap: 100px;
+  margin: 4rem 0;
+}
+
+.top-category-item-none {
+  position: relative;
+  opacity: 0;
+  left: 200%;
+  bottom: 0;
+  grid-column: 2 / span 10;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-column-gap: 20px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.top-category-item-hide {
+  position: relative;
+  left: 200%;
+  bottom: 0;
+  grid-column: 2 / span 10;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-column-gap: 20px;
+  width: 100%;
+  border-radius: 15px;
+}
+.top-category-item {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  transition: top 1s, left 2s;
+  grid-column: 2 / span 10;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-column-gap: 20px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.top-category-item:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+  bottom: 2rem;
+  transition: bottom 1s;
+}
+
+.top-category-img {
+  grid-column: 1 / span 4;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.top-category-text {
+  grid-column: 6 / span 5;
+  display: grid;
+}
+
+.top-category-name {
+  font-size: 3rem;
+}
+
+.top-category-slogan {
+  font-size: 2rem;
+}
+/* End Top Categories */
 
 @media screen and (max-height: 899px) {
   html {
