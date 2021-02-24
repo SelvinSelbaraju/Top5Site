@@ -89,7 +89,7 @@ const nextTop = () => {
     topTextSlogan.innerHTML = topText.slogan;
     topTextSubtext.innerHTML = topText.subtext;
     topTextButtonLink.innerHTML = topText.buttonText;
-    topTextButtonLink.setAttribute('href',`/top5/${topText.id}.html`)
+    topTextButtonLink.setAttribute('href',`top5/${topText.id}.html`)
 }
 
 const prevTop = () => {
