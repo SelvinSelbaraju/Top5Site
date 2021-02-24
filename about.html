@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,23 +12,25 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
         integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 </head>
+
 <body>
     <div class="container-hide">
         <i onclick="toggleMobileNav()" class="fas fa-bars"></i>
         <ul class="phone-nav" id="hide-phone-nav">
-            <li class="phone-nav-item" id="phone-nav-home"><a href="index.html" >Home</a></li>
-            <li class="phone-nav-item" id="phone-nav-about"><a href="about.html" >About</a></li>
-            <li class="phone-nav-item" id="phone-nav-top"><a href="#" >Top 5s</a></li>
+            <li class="phone-nav-item" id="phone-nav-home"><a href="index.html">Home</a></li>
+            <li class="phone-nav-item" id="phone-nav-about"><a href="about.html">About</a></li>
+            <li class="phone-nav-item" id="phone-nav-top"><a href="#">Top 5s</a></li>
             <ul class="phone-nav-top">
                 <li class="phone-nav-top-item" id="phone-nav-top-food"><a href="top5/food.html">Foods</a></li>
                 <li class="phone-nav-top-item" id="phone-nav-top-drink"><a href="top5/drink.html">Drinks</a></li>
                 <li class="phone-nav-top-item" id="phone-nav-top-tv"><a href="top5/tv.html">Tv Shows</a></li>
                 <li class="phone-nav-top-item" id="phone-nav-top-movie"><a href="top5/movie.html">Movies</a></li>
-                <li class="phone-nav-top-item" id="phone-nav-top-animemanga"><a href="top5/animemanga.html">Anime/Manga</a></li>
+                <li class="phone-nav-top-item" id="phone-nav-top-animemanga"><a
+                        href="top5/animemanga.html">Anime/Manga</a></li>
             </ul>
         </ul>
-        <article class="section-container" id="home">
-        <!-- Navbar -->
+        <article class="section-container" id="about">
+            <!-- Navbar -->
             <nav class="navbar">
                 <i class="fab fa-octopus-deploy"></i>
                 <ul class="navbar-items">
@@ -36,7 +39,7 @@
                     </a>
                     <a href="about.html" class="nav-item" id="nav-item-about">
                         About Us
-                    </a >
+                    </a>
                     <div href="#" class="nav-item" id="nav-item-top">
                         Top 5s
                         <i onclick="toggle()" class="fas fa-caret-down"></i>
@@ -50,55 +53,57 @@
                     </div>
                 </ul>
             </nav>
-        <!-- End Navbar -->
-        <!-- Text -->
-        <section class="text-container">
-            <div class="titles">
-                <h1 class="main-title">Choose. Joy.</h1>
-                <h2 class="sub-title">Expand your horizons and smile</h2>
-            </div>
-            <p class="text-item text-para">Nowadays, everyone is stuck in a routine doing the same things each and every day.</p>
-            <p class="  text-item text-para">It’s time to break out of that and try something new! Check out our amazing Top 5s!</p>
-            <button class=" text-item top-btn" type="button"><a href="#">Check out our Top 5s</a></button>
-        </section>
-        <!-- End Text -->
-        </article>
-        <article class="section-container">
-            <div class="top-heading">
-                <h1>We've. Got. You.</h1>
-            </div>
-            <div class="carousel">
-                <section class="top-section" id="food">
-                    <div class="top-text-items">
-                        <h2 class="top-text-slogan">Feeling Hungry?</h2>
-                        <h3 class="top-text-subtext">Excite your tastebuds with our Top 5 Foods</h3>
-                        <button class="top-text-btn"><a href="top5/food.html" class="top-text-btn-link">Our Top 5 Foods</a></button>
-                    </div>
-                </section>
-                <i onclick="prevTop()" class="fas fa-chevron-left chevron"></i>
-                <i onclick="nextTop()" class="fas fa-chevron-right chevron"></i>
-            </div>
-        </article>
-        <article class="section-container" id="about-home">
+            <!-- End Navbar -->
+            <h1 class="about-page-title">Here. I. Am.</h1>
             <div class="about-container">
                 <section class="about-text">
-                    <h1 class="about-title">You can never be too bold</h1>
                     <p class="about-para">
-                        When I was growing up, I would sometimes be embarassed by the things I like doing. I didn’t want to across as nerdy or
-                        weird.
+                        This is me. I look like a very ordinary guy right? Actually,
+                        my friends would describe me as ‘rogue’, ‘weird’ and
+                        bold.
                     </p>
                     <p class="about-para">
-                        However, once I started to care less about what other people thought, I became a lot happier. A lot of people also had
-                        similar interests to me and wanted to know more.
+                        When I was growing up, I always felt like I had to fit into a mould. I always felt like I had to follow what everyone
+                        else did and try to be a ‘normal’ person. As a grew older however, I slowly began to find my own and now I am as unique
+                        and happy as ever!
                     </p>
-                    <button class="about-btn">
-                        <a href="about.html">
-                        Learn More About Me
-                        </a>
-                    </button>
+                    <p class="about-para">
+                        Because I wanted to fit into a norm, I would try and like all of the same things as everyone else. The same sorts of
+                        music, the same sorts of tv shows and much more. Nowadays, I pride myself on constantly trying to push the boat out, to
+                        try new things and have new experiences. Along the way, I have found some great stuff and I want to share it with
+                        everyone so they can enjoy it too!
+                    </p>
                 </section>
                 <img class="about-img" src="images/about.jpg" alt="me">
             </div>
+        </article>
+        <article class="section-container" id="about-2">
+                <div class="about-container">
+                    <section class="about-text">
+                        <p class="about-para">
+                            This is me. I look like a very ordinary guy right? Actually,
+                            my friends would describe me as ‘rogue’, ‘weird’ and
+                            bold.
+                        </p>
+                        <p class="about-para">
+                            When I was growing up, I always felt like I had to fit into a mould. I always felt like I had to follow what
+                            everyone
+                            else did and try to be a ‘normal’ person. As a grew older however, I slowly began to find my own and now I
+                            am as unique
+                            and happy as ever!
+                        </p>
+                        <p class="about-para">
+                            Because I wanted to fit into a norm, I would try and like all of the same things as everyone else. The same
+                            sorts of
+                            music, the same sorts of tv shows and much more. Nowadays, I pride myself on constantly trying to push the
+                            boat out, to
+                            try new things and have new experiences. Along the way, I have found some great stuff and I want to share it
+                            with
+                            everyone so they can enjoy it too!
+                        </p>
+                    </section>
+                    <img class="about-img" src="images/about.jpg" alt="me">
+                </div>
         </article>
         <article class="footer">
             <div class="footer-container">
@@ -153,4 +158,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -52,8 +52,8 @@ button:hover {
 }
 
 .section-container {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   max-width: 1440px;
   max-height: 1024px;
   margin-top: 0;
@@ -345,17 +345,23 @@ button:hover {
   transition: background-image 0.5s;
 }
 
-#about {
+#about-home {
   background-color: #9dd4d7;
+  display: flex;
+}
+
+.flexbox {
+  display: flex;
 }
 
 .about-container {
   display: grid;
-  height: 100%;
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
   grid-column-gap: 20px;
   padding: 5rem 0;
+  height: auto;
+  flex: 1;
 }
 
 .about-text {
@@ -484,13 +490,13 @@ button:hover {
 .top-list {
   background-color: #f0db66;
   max-height: none;
+  height: auto;
 }
 
 .top-grid {
   margin-top: 2rem;
   display: grid;
   grid-template-rows: repeat(auto, auto);
-  height: 100%;
 }
 
 .top-entry {
@@ -534,7 +540,40 @@ button:hover {
 }
 /* End Top Page */
 
+/* Start About Page */
+#about {
+  padding-top: 50px;
+}
+
+#about .about-container {
+  padding: 2rem 0;
+}
+
+.about-page-title {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#about-2 {
+  background-color: #6ea7b0;
+  display: flex;
+}
+
+#about-2 .about-text {
+  grid-column: 7 / span 5;
+}
+
+#about-2 .about-img {
+  grid-column: 2 / span 4;
+  grid-row: 1;
+}
+/* End About Page */
+
 @media screen and (max-height: 899px) {
+  html {
+    font-size: 12px;
+  }
+
   .text-container {
     font-size: 1.2rem;
     margin-top: 60px;
@@ -866,5 +905,10 @@ button:hover {
 
   .top-entry-description {
     grid-column: 2 / span 9;
+  }
+
+  #about .about-text,
+  #about-2 .about-text {
+    font-size: 0.9rem;
   }
 }
