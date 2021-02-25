@@ -87,8 +87,9 @@ button:hover {
 
 .fa-octopus-deploy {
   grid-column: 2 / span 1;
-  padding-top: 1rem;
   font-size: 4rem;
+  justify-self: center;
+  align-self: center;
 }
 
 .fa-octopus-deploy::before {
@@ -626,7 +627,7 @@ button:hover {
   position: relative;
   left: 0;
   bottom: 0;
-  transition: top 1s, left 2s;
+  transition: bottom 0.5s, left 2s;
   grid-column: 2 / span 10;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
@@ -638,7 +639,7 @@ button:hover {
 .top-category-item:hover {
   background-color: rgba(0, 0, 0, 0.25);
   bottom: 2rem;
-  transition: bottom 1s;
+  transition: bottom 0.5s;
 }
 
 .top-category-img {
@@ -1002,5 +1003,15 @@ button:hover {
   #about .about-text,
   #about-2 .about-text {
     font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 6px;
+  }
+
+  .text-container {
+    margin-top: 75px;
   }
 }
