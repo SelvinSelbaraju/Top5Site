@@ -505,11 +505,20 @@ button:hover {
 }
 
 .top-entry {
+  position: relative;
+  bottom: 0;
+  transition: bottom 0.5s;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 20px;
   padding: 2rem 0;
 }
+
+.top-entry:hover {
+  bottom: 1rem;
+  transition: bottom 0.5s;
+}
+
 .top-image {
   grid-column: 2 / span 4;
   border-radius: 15px;
@@ -541,7 +550,7 @@ button:hover {
 }
 
 .top-entry-text {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 /* End Top Page */
 

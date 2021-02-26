@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top 5 Food</title>
+    <title>Top 5 Movies</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -15,128 +15,123 @@
     <div class="container-hide">
         <i onclick="toggleMobileNav()" class="fas fa-bars"></i>
         <ul class="phone-nav" id="hide-phone-nav">
-            <li class="phone-nav-item" id="phone-nav-home"><a href="/index.html">Home</a></li>
-            <li class="phone-nav-item" id="phone-nav-about"><a href="#">About</a></li>
-            <li class="phone-nav-item" id="phone-nav-top"><a href="#">Top 5s</a></li>
+            <li class="phone-nav-item" id="phone-nav-home"><a href="../index.html">Home</a></li>
+            <li class="phone-nav-item" id="phone-nav-about"><a href="../about.html">About</a></li>
+            <li class="phone-nav-item" id="phone-nav-top"><a href="../top.html">Top 5s</a></li>
             <ul class="phone-nav-top">
-                <li class="phone-nav-top-item" id="phone-nav-top-food"><a href="/top5/food.html">Foods</a></li>
-                <li class="phone-nav-top-item" id="phone-nav-top-drink"><a href="/top5/drink.html">Drinks</a></li>
-                <li class="phone-nav-top-item" id="phone-nav-top-tv"><a href="/top5/tv.html">Tv Shows</a></li>
-                <li class="phone-nav-top-item" id="phone-nav-top-movie"><a href="/top5/movie.html">Movies</a></li>
-                <li class="phone-nav-top-item" id="phone-nav-top-animemanga"><a href="/top5/animemanga.html">Anime/Manga</a>
-                </li>
+                <li class="phone-nav-top-item" id="phone-nav-top-food"><a href="food.html">Foods</a></li>
+                <li class="phone-nav-top-item" id="phone-nav-top-drink"><a href="drink.html">Drinks</a></li>
+                <li class="phone-nav-top-item" id="phone-nav-top-tv"><a href="tv.html">Tv Shows</a></li>
+                <li class="phone-nav-top-item" id="phone-nav-top-movie"><a href="movie.html">Movies</a></li>
+                <li class="phone-nav-top-item" id="phone-nav-top-animemanga"><a href="animemanga.html">Anime/Manga</a></li>
             </ul>
         </ul>
         <article class="section-container" id="top">
             <nav class="navbar">
                 <i class="fab fa-octopus-deploy"></i>
                 <ul class="navbar-items">
-                    <a href="/index.html" class="nav-item" id="nav-item-home">
+                    <a href="../index.html" class="nav-item" id="nav-item-home">
                         Home
                     </a>
-                    <a href="#" class="nav-item" id="nav-item-about">
+                    <a href="../about.html" class="nav-item" id="nav-item-about">
                         About Us
                     </a>
-                    <div href="#" class="nav-item" id="nav-item-top">
-                        Top 5s
+                    <div class="nav-item" id="nav-item-top">
+                        <a href="../top.html">Top 5s</a>
                         <i onclick="toggle()" class="fas fa-caret-down"></i>
                         <ul class="top-dropdown">
-                            <a href="/top5/food.html" class="dropdown-item" id="nav-top-food">Food</a>
-                            <a href="/top5/drink.html" class="dropdown-item" id="nav-top-drink">Drink</a>
-                            <a href="/top5/tv.html" class="dropdown-item" id="nav-top-tv">TV Shows</a>
-                            <a href="/top5/movie.html" class="dropdown-item" id="nav-top-movie">Movies</a>
-                            <a href="/top5/animemanga.html" class="dropdown-item" id="nav-top-animemanga">Anime/Manga</a>
+                            <a href="food.html" class="dropdown-item" id="nav-top-food">Foods</a>
+                            <a href="drink.html" class="dropdown-item" id="nav-top-drink">Drinks</a>
+                            <a href="tv.html" class="dropdown-item" id="nav-top-tv">TV Shows</a>
+                            <a href="movie.html" class="dropdown-item" id="nav-top-movie">Movies</a>
+                            <a href="animemanga.html" class="dropdown-item" id="nav-top-animemanga">Anime/Manga</a>
                         </ul>
                     </div>
                 </ul>
             </nav>
+            </nav>
+            <div class="flexbox">
             <div class="about-container">
                 <section class="about-text">
-                    <h1 class="about-title">Food Glorious Food</h1>
+                    <h1 class="about-title">Lose Yourself in Cinema</h1>
                     <p class="about-para">
-                        Ever since I was young, I would always spend time with my mum in the kitchen. At first, this was usually because I was
-                        hungry! But soon, I wanted to learn how to cook as good as she could.
+                        In general, I prefer watching TV rather than films because films are a lot longer. However, every now and then I come
+                        across a film that makes me feel on so many levels. I am grateful that I have seen it.
                     </p>
                     <p class="about-para">
-                        Nowadays, I do a lot of cooking and like trying loads of different recipes. I mainly love Asian cuisine but also love
-                        Western comfort foods. With my Top 5 Foods, I wanted to give you something delicious yet simple to make yourself!
+                        At university, if there was a particular film I wanted to see, I would watch it in the cinema on a Monday and the
+                        tickets were super cheap. During COVID, I do really miss the cinema experience and am looking forward to going again
+                        when things open up.
                     </p>
                 </section>
-                <img class="about-img" src="/images/about.jpg" alt="me">
+                <img class="about-img" src="./top-images/movie/top-movie.jpg" alt="me">
+            </div>
             </div>
         </article>
         <article class="section-container top-list" id="top-movie">
             <h2 class="top-5-heading">The Top 5</h2>
             <h3 class="top-5-sub">Drumroll please...</h3>
             <section class="top-grid">
-                <div class="top-entry">
-                    <img class="top-image" src="./top-images/food/katsu.jpg" alt="katsu">
-                    <span class="top-number">5</span>
-                    <aside class="top-entry-description">
-                        <h4 class="top-entry-name">Katsu</h4>
-                        <p class="top-entry-text">
-                            Anyone who has ever had Japanese food, has probably had some sort of Katsu. For those who don’t know, Katsu is deep
-                            fried using Panko Breadcrumbs. These breadcrumbs are so crispy and so light. The original Katsu is Pork, but Chicken,
-                            Tofu and Prawn are also delicious!
-                        </p>
-                    </aside>
-                </div>
-                <div class="top-entry">
-                    <img class="top-image" src="./top-images/food/katsu.jpg" alt="katsu">
-                    <span class="top-number">4</span>
-                    <aside class="top-entry-description">
-                        <h4 class="top-entry-name">Katsu</h4>
-                        <p class="top-entry-text">
-                            Anyone who has ever had Japanese food, has probably had some sort of Katsu. For those who don’t know, Katsu
-                            is deep
-                            fried using Panko Breadcrumbs. These breadcrumbs are so crispy and so light. The original Katsu is Pork, but
-                            Chicken,
-                            Tofu and Prawn are also delicious!
-                        </p>
-                    </aside>
-                </div>
-                <div class="top-entry">
-                    <img class="top-image" src="./top-images/food/katsu.jpg" alt="katsu">
-                    <span class="top-number">3</span>
-                    <aside class="top-entry-description">
-                        <h4 class="top-entry-name">Katsu</h4>
-                        <p class="top-entry-text">
-                            Anyone who has ever had Japanese food, has probably had some sort of Katsu. For those who don’t know, Katsu
-                            is deep
-                            fried using Panko Breadcrumbs. These breadcrumbs are so crispy and so light. The original Katsu is Pork, but
-                            Chicken,
-                            Tofu and Prawn are also delicious!
-                        </p>
-                    </aside>
-                </div>
-                <div class="top-entry">
-                    <img class="top-image" src="./top-images/food/katsu.jpg" alt="katsu">
-                    <span class="top-number">2</span>
-                    <aside class="top-entry-description">
-                        <h4 class="top-entry-name">Katsu</h4>
-                        <p class="top-entry-text">
-                            Anyone who has ever had Japanese food, has probably had some sort of Katsu. For those who don’t know, Katsu
-                            is deep
-                            fried using Panko Breadcrumbs. These breadcrumbs are so crispy and so light. The original Katsu is Pork, but
-                            Chicken,
-                            Tofu and Prawn are also delicious!
-                        </p>
-                    </aside>
-                </div>
-                <div class="top-entry">
-                    <img class="top-image" src="./top-images/food/katsu.jpg" alt="katsu">
-                    <span class="top-number">1</span>
-                    <aside class="top-entry-description">
-                        <h4 class="top-entry-name">Katsu</h4>
-                        <p class="top-entry-text">
-                            Anyone who has ever had Japanese food, has probably had some sort of Katsu. For those who don’t know, Katsu
-                            is deep
-                            fried using Panko Breadcrumbs. These breadcrumbs are so crispy and so light. The original Katsu is Pork, but
-                            Chicken,
-                            Tofu and Prawn are also delicious!
-                        </p>
-                    </aside>
-                </div>
+            <div class="top-entry">
+                <img class="top-image" src="./top-images/movie/goodwill.jpg" alt="Good Will Hunting">
+                <span class="top-number">5</span>
+                <aside class="top-entry-description">
+                    <h4 class="top-entry-name">Good Will Hunting</h4>
+                    <p class="top-entry-text">
+                        In this film, a university janitor is actually a genius mathematician, but he doesn’t believe it. At the same time, he
+                        has lots of personal troubles which a professor has to help manage. Watching it makes me wish I was better at Maths and
+                        it manages to make the watcher really feel for Will.
+                    </p>
+                </aside>
+            </div>
+            <div class="top-entry">
+                <img class="top-image" src="./top-images/movie/500.jpg" alt="500 Days of Summer">
+                <span class="top-number">4</span>
+                <aside class="top-entry-description">
+                    <h4 class="top-entry-name">500 Days of Summer</h4>
+                    <p class="top-entry-text">
+                        This film is essentially a romcom with a twist. Instead of a happy ending, the hero explains how it all goes wrong. It’s
+                        definitely less light-hearted than your average romcom but it is clever, beautifully done and good to watch. It’s
+                        somewhat inspiring despite the unfortuante story.
+                    </p>
+                </aside>
+            </div>
+            <div class="top-entry">
+                <img class="top-image" src="./top-images/movie/shawnshank.jpg" alt="The Shawnshank Redemption">
+                <span class="top-number">3</span>
+                <aside class="top-entry-description">
+                    <h4 class="top-entry-name">The Shawnshank Redemption</h4>
+                    <p class="top-entry-text">
+                        Often regarded as one of the best films of all time and the top-rated film on IMDB. It follows the hero’s attempt to
+                        escape prison. He is abused yet he still pushes on. The story and sense of emotion it invokes in the watcher are
+                        unbelievable.
+                    </p>
+                </aside>
+            </div>
+            <div class="top-entry">
+                <img class="top-image" src="./top-images/movie/endgame.jpg" alt="Avengers Endgame">
+                <span class="top-number">2</span>
+                <aside class="top-entry-description">
+                    <h4 class="top-entry-name">Avengers Endgame</h4>
+                    <p class="top-entry-text">
+                        To get the full benefit, you need to watch most of the films in the Marvel Cinematic Universe in order prior to watching
+                        this. This film ties everything up so perfectly and is so appealing for the fans of the MCU. The music, story and
+                        characters throughout the MCU are fantastic.
+                    </p>
+                </aside>
+            </div>
+            <div class="top-entry">
+                <img class="top-image" src="./top-images/movie/fgump.jpg" alt="Forrest Gump">
+                <span class="top-number">1</span>
+                <aside class="top-entry-description">
+                    <h4 class="top-entry-name">Forrest Gump</h4>
+                    <p class="top-entry-text">
+                        A classic, iconic film. It tells the story of Forrest Gump and the troubles of his life. Yet despite all of this, he
+                        overcomes his problems and achieves so many great things. The best thing is that he doesn’t even see it like that. It’s
+                        so inspiring, emotional and funny. A must watch.
+                    </p>
+                </aside>
+            </div>
             </section>
         </article>
         <article class="footer">
@@ -148,28 +143,28 @@
                             <a class="sitemap-title">Sitemap</a>
                         </li>
                         <li class="sitemap-item-name">
-                            <a>Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li class="sitemap-item-name">
-                            <a>About</a>
+                            <a href="../about.html">About</a>
                         </li>
                         <li class="sitemap-item-name">
-                            <a>Top 5s</a>
+                            <a href="../top.html">Top 5s</a>
                             <ul class="sitemap-top5s">
                                 <li class="sitemap-top-name">
-                                    <a href="/top5/food.html">Foods</a>
+                                    <a href="food.html">Foods</a>
                                 </li>
                                 <li class="sitemap-top-name">
-                                    <a href="/top5/drink.html">Drinks</a>
+                                    <a href="drink.html">Drinks</a>
                                 </li>
                                 <li class="sitemap-top-name">
-                                    <a href="/top5/tv.html">TV Shows</a>
+                                    <a href="tv.html">TV Shows</a>
                                 </li>
                                 <li class="sitemap-top-name">
-                                    <a href="/top5/movie.html">Movies</a>
+                                    <a href="movie.html">Movies</a>
                                 </li>
                                 <li class="sitemap-top-name">
-                                    <a href="/top5/animemanga.html">Anime/Manga</a>
+                                    <a href="animemanga.html">Anime/Manga</a>
                                 </li>
                             </ul>
                         </li>
