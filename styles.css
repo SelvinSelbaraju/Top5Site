@@ -157,8 +157,7 @@ button:hover {
 
 .top-dropdown {
   position: absolute;
-  top: 80px;
-  left: 0;
+  top: 65px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -184,7 +183,9 @@ button:hover {
 }
 
 .fa-caret-down {
+  margin-left: 0.5rem;
   cursor: pointer;
+  font-size: 2rem;
 }
 
 .text-container {
@@ -223,6 +224,7 @@ button:hover {
   background-color: #f0db66;
   border-radius: 15px;
   cursor: pointer;
+  width: 100%;
 }
 
 .top-heading {
@@ -387,8 +389,8 @@ button:hover {
   font-weight: 700;
   background-color: #f0db66;
   height: 100px;
-  width: 50%;
   border-radius: 15px;
+  padding: 0 1rem;
 }
 
 .about-img {
@@ -987,7 +989,11 @@ button:hover {
     font-size: 1rem;
   }
 
-  #top-food {
+  #top-food,
+  #top-drink,
+  #top-tv,
+  #top-movie,
+  #top-animemanga {
     height: max-content;
   }
 
